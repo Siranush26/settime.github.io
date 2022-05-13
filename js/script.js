@@ -1,8 +1,13 @@
 let button1=document.getElementById("button1");
 let button2=document.getElementById("button2");
-let element=document.querySelector("#heart");
+let element=document.querySelector(".heart");
 let container=document.getElementsByClassName("container")
-console.log(getComputedStyle(document.querySelector('#heart'), ':before').getPropertyValue('content'));
+//console.log(getComputedStyle(document.querySelector('#heart'), ':before').getPropertyValue('content'));
+let styleElem = document.head.appendChild(document.createElement("style"));
+
+styleElem.innerHTML = ".heart:before{background:blue}";
+
+
 
 
 button1.addEventListener("click",()=>{
