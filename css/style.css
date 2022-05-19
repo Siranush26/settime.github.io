@@ -94,21 +94,15 @@ body{
 
 .heart:before,
 .heart:after {
-  content: "purple";
-  background-color: #cc66ff;
+  content: "";
+  background-color:var(--beforeback, #cc66ff) ;
   border-radius: 50%;
   height: 100px;
   position: absolute;
   width: 100px;
 }
 
-.heart:before{
-    content: "♥";
-    
-}
-.heart:after {
-    content: "♥ ♥";
-    background-color: yellow;}
+
 
 .heart:before {
     top: -50px;
